@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grocery Totaler</title>
+</head>
+
+<body>
+    <p>Are you a card member?<input type="checkbox" name="" id="memberCheck" onchange=""></p> 
+    <form>
+        <input type='radio'>Milk</input>
+        <input type="number" name="" id="" placeholder="How Many?">
+        <button type="submit" onclick="htmlAdd(e)">Add to cart</button>
+        <br>
+        <input type='radio'>Banana</input>
+        <input type="number" name="" id="" placeholder="How Many?">
+        <br>
+        <input type='radio'>Chocolate</input>
+        <input type="number" name="" id="" placeholder="How Many?">
+        <br>
+        <input type='radio'>Mango</input>
+        <input type="number" name="" id="" placeholder="How Many?">
+        <br>
+    </form>
+    <!-- <input type="text"> -->
+    <script src="./grocery.js"></script>
+    <p id="thePiTag"></p>
+    <p id="groceryVal">Heyhey</p>
+    <button type="submit" onclick="getVal()">Get Total</button>
+</body>
+
+</html>

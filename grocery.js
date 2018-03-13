@@ -24,13 +24,6 @@ const groceries = {
         cost: .99
     }
 };
-function htmlAdd(e){
-    preventDefault(e)
-    e.preventDefault();
-    console.log(e)
-    // element = 
-    // addProduct()
-}
 function addProduct(newProduct, amount) {
     if(!newProduct && !amount){
         return;
@@ -85,6 +78,7 @@ function getTotal() {
         memberDiscount(subTotal);
     }
     console.log('something working')
+    return 
 }
 function getVal(){
     getTotal()
@@ -92,3 +86,16 @@ function getVal(){
     myVal.innerText = total 
     console.log(myVal.innerText)
 }
+function writeToPage(){
+    var totalHolder = document.getElementById('groceryVal')
+    let myString = `Your total is ${subTotal}, and you purchased ${receipt}`
+    totalHolder.innerText = myString;
+};
+
+addProduct(groceries.milk);
+addProduct(groceries.banana, 5);
+addProduct(groceries.mango, 10);
+addProduct(groceries.chocolate);
+getTotal();
+console.log(subTotal)
+console.log(receipt)

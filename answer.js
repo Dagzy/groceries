@@ -1,7 +1,55 @@
-// Write a function that tallies up the total bill on a grocery list. Include
-// calculations for produce by the pound. Calculations for Valued Card member
-// make a transaction, attach a receipt to it, and attach the transaction to a
-// specific category
+// //Fizz Buzz
+// //Write a for loop that counts to 100.
+// //For each number that's divisible by 3, print fizz to the console
+// //For each number that's divisible by 5, printt buzz to the console
+// //For each number that's divisible by both 3 and 5, print FizzBuzz 
+// //      to the console
+// //For each other number, print just the number to the console
+//  (Initializer, Condition, Incrementer)
+// for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+    
+// }
+// var i = 0;
+// for (; i < 9; i++) {
+//     console.log(i);
+//     // more statements
+// }
+// for (var i = 0;; i++) {
+//     console.log(i);
+//     if (i > 3) break;
+//     // more statements
+//  }
+//  var i = 0;
+
+// for (;;) {
+//   if (i > 3) break;
+//   console.log(i);
+//   i++;
+// }
+
+
+
+
+
+
+
+
+
+// Write a function that tallies up the total bill on a grocery list. 
+//Include calculations for produce by the pound. Calculations for 
+//Valued Card member make a transaction, attach a receipt to it, and 
+//attach the transaction to a specific category
+
+
+
+
+
+
+
+
+
+
 var subTotal = 0;
 var total = 0;
 var totalArr = [];
@@ -95,18 +143,11 @@ function addTax(total) {
 
 function getTotal() {
     tally()
-    console.log('total', total)
     if (cardMember) {
         memberDiscount(subTotal);
     }
-    console.log('subtotal in getTotal',subTotal)
-    console.log('total in getTotal',total)
     addTax(total)
-    console.log(grandTotal)
     total = grandTotal;
-    console.log(subTotal)
-    console.log(total)
-
 }
 
 addProduct(groceries.milk);
